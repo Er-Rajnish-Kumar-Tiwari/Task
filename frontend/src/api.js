@@ -1,7 +1,7 @@
 // api.js
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'https://task-d0eq.onrender.com' });
+const API = axios.create({ baseURL: 'https://task-d0eq.onrender.com/api' });
 
 API.interceptors.request.use((req) => {
   const token = localStorage.getItem('token');
